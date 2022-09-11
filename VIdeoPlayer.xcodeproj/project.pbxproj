@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		38EB174A27EFC4EE00044DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB174927EFC4EE00044DCF /* AppDelegate.swift */; };
-		38EB174C27EFC4EE00044DCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB174B27EFC4EE00044DCF /* SceneDelegate.swift */; };
-		38EB174E27EFC4EE00044DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB174D27EFC4EE00044DCF /* ViewController.swift */; };
 		38EB175127EFC4EE00044DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EB174F27EFC4EE00044DCF /* Main.storyboard */; };
 		38EB175327EFC4F100044DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38EB175227EFC4F100044DCF /* Assets.xcassets */; };
 		38EB175627EFC4F100044DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EB175427EFC4F100044DCF /* LaunchScreen.storyboard */; };
 		38EB176127EFC4F200044DCF /* VIdeoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB176027EFC4F200044DCF /* VIdeoPlayerTests.swift */; };
 		38EB176C27EFC4F200044DCF /* VIdeoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB176B27EFC4F200044DCF /* VIdeoPlayerUITests.swift */; };
+		38EB178327EFC54D00044DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB178227EFC54D00044DCF /* ViewController.swift */; };
+		38EB178827EFC55D00044DCF /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB178727EFC55D00044DCF /* ViewController+Extensions.swift */; };
+		38EB178D27EFC57100044DCF /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB178C27EFC57100044DCF /* AVPlayerView.swift */; };
+		38EB179527EFC5D400044DCF /* skater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38EB179427EFC5D400044DCF /* skater.mp4 */; };
+		38EB179627EFC5D400044DCF /* skater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38EB179427EFC5D400044DCF /* skater.mp4 */; };
+		38EB179727EFC5D400044DCF /* skater.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 38EB179427EFC5D400044DCF /* skater.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,6 @@
 /* Begin PBXFileReference section */
 		38EB174627EFC4EE00044DCF /* VIdeoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIdeoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EB174927EFC4EE00044DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38EB174B27EFC4EE00044DCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38EB174D27EFC4EE00044DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38EB175027EFC4EE00044DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38EB175227EFC4F100044DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38EB175527EFC4F100044DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		38EB176727EFC4F200044DCF /* VIdeoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIdeoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38EB176B27EFC4F200044DCF /* VIdeoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIdeoPlayerUITests.swift; sourceTree = "<group>"; };
 		38EB176D27EFC4F200044DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38EB178227EFC54D00044DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38EB178727EFC55D00044DCF /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		38EB178C27EFC57100044DCF /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		38EB179427EFC5D400044DCF /* skater.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = skater.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				38EB174927EFC4EE00044DCF /* AppDelegate.swift */,
-				38EB174B27EFC4EE00044DCF /* SceneDelegate.swift */,
-				38EB174D27EFC4EE00044DCF /* ViewController.swift */,
+				38EB178227EFC54D00044DCF /* ViewController.swift */,
+				38EB178727EFC55D00044DCF /* ViewController+Extensions.swift */,
+				38EB178C27EFC57100044DCF /* AVPlayerView.swift */,
+				38EB179427EFC5D400044DCF /* skater.mp4 */,
 				38EB174F27EFC4EE00044DCF /* Main.storyboard */,
 				38EB175227EFC4F100044DCF /* Assets.xcassets */,
 				38EB175427EFC4F100044DCF /* LaunchScreen.storyboard */,
@@ -234,6 +242,7 @@
 				38EB175627EFC4F100044DCF /* LaunchScreen.storyboard in Resources */,
 				38EB175327EFC4F100044DCF /* Assets.xcassets in Resources */,
 				38EB175127EFC4EE00044DCF /* Main.storyboard in Resources */,
+				38EB179527EFC5D400044DCF /* skater.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EB179627EFC5D400044DCF /* skater.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EB179727EFC5D400044DCF /* skater.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38EB174E27EFC4EE00044DCF /* ViewController.swift in Sources */,
+				38EB178D27EFC57100044DCF /* AVPlayerView.swift in Sources */,
+				38EB178327EFC54D00044DCF /* ViewController.swift in Sources */,
+				38EB178827EFC55D00044DCF /* ViewController+Extensions.swift in Sources */,
 				38EB174A27EFC4EE00044DCF /* AppDelegate.swift in Sources */,
-				38EB174C27EFC4EE00044DCF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowtinc.VIdeoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.flowtinc.VIdeoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
